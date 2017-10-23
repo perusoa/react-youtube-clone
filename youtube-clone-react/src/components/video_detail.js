@@ -5,7 +5,7 @@ const VideoDetail = (props) => {
 
   //If there is no video display the words loading
   if ( !video ) {
-    return <div>Loading...</div>;
+    return <div>Sorry, nothing matched your search terms. Try searching something else!</div>;
   }
 
   //If there is no video description display a simple message
