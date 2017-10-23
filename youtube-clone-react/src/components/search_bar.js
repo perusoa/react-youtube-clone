@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from '../images/yt_logo_mono_dark.png';
+import Logo from '../images/react_tube.svg';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -14,10 +14,14 @@ class SearchBar extends Component {
         <div className="max-container">
           <div className="col-md-12">
             <img className="logo" src={ Logo } />
-            <input
-              placeholder="Search..."
-              value={ this.state.term }
-              onChange={ (event) => this.onInputChange(event.target.value) } />
+            <div className="input-container">
+              <input
+                id="search"
+                placeholder="Search..."
+                value={ this.state.term }
+                onChange={ (event) => this.onInputChange(event.target.value) } />
+              <label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+            </div>
           </div>
         </div>
       </div>
