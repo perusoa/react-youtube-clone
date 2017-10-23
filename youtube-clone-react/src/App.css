@@ -168,6 +168,7 @@ p, div {
       vertical-align: top;
       padding-right: 20px;
       margin-bottom: 10px;
+      background-color: transparent;
       border: none; }
       .video-list .video-list-item .thumbnail img {
         max-width: 100%;
