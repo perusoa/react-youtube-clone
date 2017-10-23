@@ -94,33 +94,46 @@ p, div {
 /*------------------------------------------------------------------
 [Video Details]
 -------------------------------------------------------------------*/
-.video-detail .details {
-  padding: 35px 25px;
-  background-color: #282828;
-  color: #fff;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px; }
-  .video-detail .details .publisher {
+.video-detail {
+  overflow: hidden; }
+  .video-detail .video-embed {
     position: relative;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
-    display: block;
-    padding-bottom: 10px;
-    margin-bottom: 10px; }
-    .video-detail .details .publisher .publisher-name {
-      color: #61dafb; }
-    .video-detail .details .publisher:after {
-      content: '';
+    padding-bottom: 56.25%;
+    width: 100%; }
+    .video-detail .video-embed .video-player {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
-      height: 2px;
-      width: 50px;
-      background-color: #61dafb; }
-  .video-detail .details .video-description {
-    margin-bottom: 30px;
-    margin-top: 20px; }
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .video-detail .details {
+    padding: 35px 25px;
+    background-color: #282828;
+    color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+    .video-detail .details .publisher {
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      display: block;
+      padding-bottom: 10px;
+      margin-bottom: 10px; }
+      .video-detail .details .publisher .publisher-name {
+        color: #61dafb; }
+      .video-detail .details .publisher:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 50px;
+        background-color: #61dafb; }
+    .video-detail .details .video-description {
+      margin-bottom: 30px;
+      margin-top: 20px; }
 
 /*------------------------------------------------------------------
 [Video List]
