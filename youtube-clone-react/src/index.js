@@ -24,7 +24,7 @@ class App extends Component {
     };
 
     //Set an initial search term so that it doesn't show up blank
-    this.videoSearch('lacrosse');
+    this.videoSearch('URBN');
   }
 
   videoSearch(term) {
