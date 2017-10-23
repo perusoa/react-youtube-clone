@@ -21,8 +21,8 @@ const VideoDetail = (props) => {
 
   return (
     <div className="video-detail">
-      <div className="embed-responsive embed-responsive-16by9">
-        <iframe className="embed-responsive-item" src={ url }></iframe>
+      <div className="video-embed">
+        <iframe className="video-player" src={ url }></iframe>
       </div>
       <div className="details">
         <span className="publisher">Published by: <span className="publisher-name">{ video.snippet.channelTitle }</span></span>
