@@ -2,7 +2,11 @@ import React from 'react';
 
 const VideoListItem = (props) => {
   const video = props.video;
+
+  //Grabe the onVideoSelect prop from parent component
   const onVideoSelect = props.onVideoSelect;
+
+  //Grab the thumbnail image of the video
   const imageUrl = video.snippet.thumbnails.default.url;
 
   return (

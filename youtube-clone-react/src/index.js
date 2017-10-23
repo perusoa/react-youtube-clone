@@ -24,9 +24,11 @@ class App extends Component {
     };
 
     //Set an initial search term so that it doesn't show up blank
-    this.videoSearch('URBN');
+    this.videoSearch('URBN Campus');
   }
 
+
+  //Method for the actual handling of the search terms
   videoSearch(term) {
     YTSearch({ key: API_KEY, term: term }, (videos) => {
       this.setState({
