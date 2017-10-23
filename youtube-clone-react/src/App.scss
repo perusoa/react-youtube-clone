@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:700|Source+Sans+Pro:400,600');
 
+/*------------------------------------------------------------------
+[Base & Variables]
+-------------------------------------------------------------------*/
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  padding-bottom: 80px;
   background-color: #f9f9f9;
 }
 
@@ -33,6 +35,11 @@ p, div {
   }
 }
 
+$react-blue: #61dafb;
+$dark-gray: #282828;
+$light-gray: rgba(0,0,0,.14);
+$trans-white: rgba(255,255,255,.14);
+
 /*------------------------------------------------------------------
 [Search Bar]
 -------------------------------------------------------------------*/
@@ -40,7 +47,7 @@ p, div {
   position: relative;
   display: block;
   overflow: hidden;
-  background-color: #282828;
+  background-color: $dark-gray;
   padding: 20px 0;
   margin-bottom: 40px;
   box-shadow: 0 0 44px rgba(0,0,0,.09);
@@ -82,7 +89,7 @@ p, div {
       }
 
       &:focus {
-        border-color: #61dafb !important;
+        border-color: $react-blue !important;
         outline: 0 !important;
         -webkit-transition: .4s ease;
         transition: .4s ease;
@@ -110,7 +117,7 @@ p, div {
 -------------------------------------------------------------------*/
 .video-detail,
 .video-list {
-  box-shadow: 0 0 44px rgba(0,0,0,.14);
+  box-shadow: 0 0 44px $light-gray;
   border-radius: 4px;
 }
 
@@ -137,7 +144,7 @@ p, div {
 
   .details {
     padding: 35px 25px;
-    background-color: #282828;
+    background-color: $dark-gray;
     color: #fff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -151,7 +158,7 @@ p, div {
       padding-bottom: 10px;
       margin-bottom: 10px;
 
-      .publisher-name { color: #61dafb; }
+      .publisher-name { color: $react-blue; }
 
       &:after {
         content: '';
@@ -160,7 +167,7 @@ p, div {
         left: 0;
         height: 2px;
         width: 50px;
-        background-color: #61dafb;
+        background-color: $react-blue;
       }
     }
 
@@ -189,12 +196,12 @@ p, div {
   -webkit-flex-direction: column;
   flex-direction: column;
   color: #fff;
-  background-color: #282828;
+  background-color: $dark-gray;
 
   .video-list-title {
     margin-top: 10px;
     padding-bottom: 14px;
-    border-bottom: 3px solid rgba(255,255,255,.14);
+    border-bottom: 3px solid $trans-white;
   }
 
   .video-list-item {
@@ -203,7 +210,7 @@ p, div {
     display: -moz-flexbox;
     display: -webkit-flex;
     display: flex;
-    border-bottom: 3px solid rgba(255,255,255,.14);
+    border-bottom: 3px solid $trans-white;
     padding: 15px 0;
     
     .thumbnail {
@@ -234,7 +241,7 @@ p, div {
         line-height: 15px;
         text-transform: uppercase;
         font-weight: 600;
-        color: #61dafb;
+        color: $react-blue;
         display: block;
         padding-bottom: 5px;
         margin-bottom: 5px;
@@ -249,14 +256,9 @@ p, div {
           left: 0;
           height: 2px;
           width: 50px;
-          background-color: #61dafb;
+          background-color: $react-blue;
         }
       }
-
-      // @media (max-width: 1250px) {
-      //   display: block;
-      //   max-width: 100%;
-      // }
     }
 
     &:last-child { border: none; }
@@ -268,6 +270,19 @@ p, div {
       }
     }
   }
+}
+
+/*------------------------------------------------------------------
+[Footer Simple]
+-------------------------------------------------------------------*/
+footer {
+  margin-top: 40px;
+  padding: 40px 20px;
+  display: block;
+  background-color: $react-blue;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
 
 /*------------------------------------------------------------------
@@ -319,7 +334,7 @@ p, div {
 @media (max-width: 640px) {
   .video-list-item {
     width: 100% !important;
-    border-color: rgba(255,255,255,.14) !important;
+    border-color: $trans-white !important;
   }
 }
 
